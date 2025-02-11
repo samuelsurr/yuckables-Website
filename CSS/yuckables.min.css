@@ -1,0 +1,247 @@
+
+	
+.nav-bar {
+    background-color: rgba(0, 255, 102, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Oswald-Regular', sans-serif;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.navlogo {
+		   opacity: 1;
+    width: 100px;
+    height: 100px;
+    display: block; 
+
+}
+.navlogo:hover{
+	
+  filter: invert(16%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(85%) contrast(100%);
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    flex-grow: .9;
+    gap: 120px; 
+    margin-right: auto; 
+	margin: 0 auto;
+	
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    color: white; 
+}
+
+
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none; 
+    margin-left: auto;
+}
+
+
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 50;
+}
+
+.mobile-menu a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+	font-family: 'Oswald-Regular', sans-serif;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: #00FF66; 
+}
+
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+		    margin-right: 40px; 
+    }
+
+    .nav-links {
+        display: none; 
+		
+    }
+}
+
+
+
+
+			 
+			 
+			 
+			 
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+       
+
+        .logo-container {
+            position: relative;
+            z-index: 10;
+        }
+
+
+
+
+
+		
+		@font-face {
+    font-family: 'Oswald-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Oswald-Regular'), url('fonts/oswald-regular.woff') format('woff');
+
+
+		}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+
+
+.simple-button {
+    background-color: black;
+    color: white; 
+    border: none; 
+    padding: 20px 40px; 
+    font-size: 32px; 
+    border-radius: 7px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+	  font-family: 'Oswald-Regular', sans-serif;
+}
+
+.simple-button:hover {
+    background-color: #009944;
+}
+
+
+.instagram-icon img {
+    width: 40px; 
+    height: auto;
+    margin-right: 30px; 
+    transition: filter 0.3s ease; 
+}
+
+
+.instagram-icon img:hover {
+filter: invert(100%);
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        justify-content: space-between; 
+    }
+
+ 
+    .instagram-icon {
+ 
+        margin-left: 140px; 
+        margin-right: auto;
+		margin-top: 4px;
+		width: 20px;
+		height: auto;
+    }
+
+    .hamburger-menu {
+        margin-left: auto; 
+		width: 37px;
+		height: auto;
+    }
+
+    .logo-container {
+        order: 0;
+    }
+}
+
+.instagram-logo {
+    width: 140px;
+    height: auto; 
+    margin-top: 10px; 
+    transition: filter 0.3s ease; 
+}
+
+.instagram-logo:hover {
+    filter: invert(57%) sepia(91%) saturate(299%) hue-rotate(83deg) brightness(90%) contrast(86%);
+}

@@ -1,0 +1,24 @@
+<IfModule mod_headers.c>
+   # Default Content-Security-Policy
+   Header set Content-Security-Policy " \
+   default-src 'self'; \
+   img-src 'self' data: https://www.googletagmanager.com; \
+   script-src 'self'  https://script.google.com https://*.infogram.com https://*.google.com https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.prayertents.com https://*.calendly.com https://*.hotjar.com https://*.doubleclick.net https://*.jotform.com https://www.youtube.com 'unsafe-inline' 'unsafe-eval'; \
+   style-src 'self' 'unsafe-inline'; \
+   media-src 'self'; \
+   font-src 'self'; \
+   connect-src 'self' https://script.google.com https://noembed.com https://www.youtube.com https://e.infogram.com; \
+   frame-src 'self'  https://script.google.com https://www.youtube.com https://e.infogram.com; \
+   child-src 'self'; \
+   object-src 'none';"
+   
+   # Allow CORS from your website
+   Header set Access-Control-Allow-Origin "https://www.yuckables.com"
+   Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+   Header set Access-Control-Allow-Headers "Content-Type"
+
+   # Allow preflight OPTIONS requests
+   Header always set Access-Control-Allow-Origin "https://www.yuckables.com"
+   Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+   Header always set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
