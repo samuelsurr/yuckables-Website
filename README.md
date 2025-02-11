@@ -6,8 +6,7 @@
 This repository contains the source code for my personal website. 
 
 ## Overview
-
-This website serves as a digital portfolio and introduction to myself. I made the designs clean and responsive, ensuring a consistent experience across different devices.  I focused on user experience during development and create a video player for the user in the "Lock In" tab.
+Simple website to showcase my skills in HTMLS, CSS, and JS. I made the designs clean and responsive, ensuring a consistent experience across different devices.  User experience is key. Also created a video player for the user in the "Lock In" tab.
 
 ## Features
 
